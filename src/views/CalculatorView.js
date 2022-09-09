@@ -29,9 +29,9 @@ export default class CalculatorView extends React.Component{
 
     //Functions
     onDigitPress = (digit) => {
+        
         this.calc.addDigit(digit);
         this.setState({display: this.calc.getMainDisplay()});
-        
     }
     onBinaryPress = (operator) => {
         this.calc.addBinaryOperator(operator);
